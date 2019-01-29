@@ -481,9 +481,6 @@ header section:last-child {
 .displayBlock {
   display: block; }
 
-.displayNone {
-  display: none; }
-
 main {
   width: 80%;
   margin: auto;
