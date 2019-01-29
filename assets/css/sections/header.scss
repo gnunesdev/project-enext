@@ -1,0 +1,238 @@
+//header section
+header section:last-child{
+  background: $second-color;
+}
+
+//infos-menu
+.infos-menu{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-around;
+
+  .menu-icon{
+    display: none;
+    cursor: pointer;
+    color: $second-color;
+  }
+
+  .logo{
+    color: $hot-color;
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+
+    p:last-child{
+      color: $second-color;
+      font-size: .6em;
+      font-style: italic;
+    }
+
+    @media #{$md-mobile} {
+      font-size: 1.5em;
+    }
+
+    @media #{$sh-mobile} {
+      font-size: 1.25em;
+    }
+  }
+
+  input{
+    padding: .6em;
+    border-radius: 8px;
+    margin-left: 1em;
+    width: 18em;
+  }
+
+  .free-shipping{
+    margin-left: 1em;
+    text-align: center;
+    color: $hot-color;
+    padding-right: 1em;
+
+    h2{
+      font-size: 1.3em;
+      font-style: italic;
+    }
+  }
+
+  .bag{
+    height: auto;
+    line-height: 32px;
+
+    i{
+      font-size: 2em;
+      color: $second-color;
+      float: left;
+      margin-right:1em;
+    }
+
+    p{
+      float: left;
+      font-size: 1.2em;
+      margin-left: .3em;
+    }
+  }
+
+  //responsive infos-menu
+  @media #{$lg-mobile} {
+    width: 100%;
+    padding-top: 1em;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: auto 50% auto;
+    grid-template-areas:
+      "main1 main2 main3"
+      "footer footer footer";
+
+    .menu-icon{
+      grid-area: main1;
+      display: block;
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+
+    .logo{
+      grid-area: main2;
+      display: block;
+    }
+
+    .bag{
+      grid-area: main3;
+      text-align: center;
+      display: block;
+
+      i{
+        float: none;
+        width:100%;
+        margin: auto;
+      }
+
+      p{
+        float: none;
+      }
+
+    }
+
+    .free-shipping{
+      padding: 0;
+      height: 2em;
+      background-color: lightgray;
+      grid-area: footer;
+      width: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+
+      h2, p{
+        float: left;
+        color: gray;
+        font-size: 1em;
+        font-weight: normal;
+        font-style: italic;
+        line-height: 2em;
+      }
+
+      p{
+        margin-left: .4em;
+      }
+
+    }
+
+    input{
+      display: none;
+    }
+  }
+}
+
+//nav-menu
+.nav-menu{
+  width: 90%;
+  margin: auto;
+  color: #fff;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  align-items: center;
+  height: 70px;
+  position: relative;
+
+  .principal-itens{
+    display: flex;
+    align-items: center;
+
+    li{
+      display: inline;
+      margin-left: .6em;
+      font-style: italic;
+      padding: 1em;
+    }
+
+    p{
+      margin-left: .6em;
+      background-color: #371b42;
+      padding: 1em;
+      font-style: italic;
+    }
+  }
+
+  .sign{
+    display: flex;
+    justify-self: flex-end;
+
+    p{
+      margin-left: 1.4em;
+    }
+
+  }
+
+  //responsive nav-menu
+  @media #{$lg-mobile}{
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+    display: none;
+
+    .principal-itens{
+      display: block;
+
+      li {
+        display: block;
+        box-sizing: border-box;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #fff;
+      }
+
+      p{
+        margin: auto;
+        text-align: center;
+      }
+    }
+
+    .sign{
+      padding-top: 1.4em;
+      padding-bottom: 1.4em;
+      justify-content: center;
+
+      p{
+        margin-left: 1.4em;
+      }
+
+      p:first-child{
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.displayBlock{
+  display: block;
+}
+
+.displayNone{
+  display: none;
+}

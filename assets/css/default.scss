@@ -1,0 +1,14 @@
+//helpers
+@import 'helpers/variaveis';
+
+//base configs
+@import 'base/normalize';
+@import 'base/configs';
+
+//sections page
+@import 'sections/header';
+@import 'sections/main';
+@import 'sections/footer';
+
+//utils
+@import 'utils/lightbox';

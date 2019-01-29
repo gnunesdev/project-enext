@@ -1,0 +1,78 @@
+// main content
+main {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 5em;
+
+  h1{
+    margin-top: 60px;
+  }
+
+  @media #{$lg-mobile} {
+    padding-bottom: 2.5em;
+
+    h1{
+      margin-top: 30px;
+      font-size: 1.7em;
+      text-align: center;
+    }
+  }
+}
+
+// grid items-potions
+.links-potions{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 80px;
+  font-size: 1em;
+
+  //responsive grid items-potions
+  @media #{$lg-mobile}{
+    grid-template-columns: auto auto;
+    grid-row-gap: 60px;
+    margin-top: 35px;
+  }
+
+  @media #{$md-mobile} {
+    font-size: .7em
+  }
+
+  @media #{$sh-mobile} {
+    font-size: .6em
+  }
+}
+
+// each pottion
+.item-potion{
+  display: grid;
+  justify-items: center;
+
+  a{
+    width: 100%;
+    height: 100%;
+  }
+
+  img{
+    width: 100%;
+    cursor: pointer;
+
+    @media #{$lg-mobile}{
+      cursor: default;
+    }
+  }
+
+  .desc-item{
+      align-self: flex-end;
+
+      p:first-child{
+        float: left;
+      }
+
+      p:last-child{
+        color: $hot-color;
+        float: left;
+        margin-left: .3em;
+      }
+  }
+}

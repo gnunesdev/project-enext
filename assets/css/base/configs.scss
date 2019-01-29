@@ -1,0 +1,23 @@
+//default configs
+html{
+  font-family: 'Roboto Slab', serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+button{
+  color: #fff;
+  font-weight: bold;
+  background-color: $hot-color;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

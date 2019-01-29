@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- scripts -->
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/collapse-menu.js"></script>
+    <script type="text/javascript" src="js/pure-lightbox.js"></script>
+
+    <!-- styles and fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="css/default.css">
+
+    <title>Merlin's Potions</title>
+  </head>
+  <body>
+
+    <!-- header -->
+    <header>
+      <section>
+
+        <!-- menu flex -->
+        <div class="infos-menu">
+
+          <!-- menu responsive -->
+          <div class="menu-icon">
+            <i class="fa fa-bars fa-2x"></i>
+          </div>
+
+          <!-- logo menu -->
+          <div class="logo">
+            <p><strong>MERLIN'S</strong> POTIONS</p>
+            <p>---- fine potions since 1026 ----</p>
+          </div>
+
+          <!-- search input -->
+          <input type="text" name="" value="" placeholder="Search our stock">
+
+          <!-- free shipping -->
+          <div class="free-shipping">
+            <h2>Free shipping</h2>
+            <p>on orders over $50</p>
+          </div>
+
+          <!-- bag -->
+          <div class="bag">
+            <i class="fa fa-shopping-bag"></i>
+            <p><strong>BAG:</strong> 1</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- nav-menu -->
+      <section>
+        <div class="nav-menu">
+          <div class="principal-itens">
+
+            <!-- italic items -->
+            <nav>
+              <ul>
+                <li><a href="#">Potions</a></li>
+                <li><a href="#">Ingredients</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Supplies</a></li>
+                <li><a href="#">Charms</a></li>
+              </ul>
+            </nav>
+            <p>Clearance!</p>
+          </div>
+
+          <!-- sign items -->
+          <div class="sign">
+            <p id="sign-in">Sign In</p>
+            <p>or</p>
+            <p id="sign-up">Sign Up</p>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- main -->
+    <main>
+
+      <!-- list-items -->
+      <section>
+        <h1>Potions</h1>
+
+        <!-- grid potions -->
+        <div class="links-potions">
+
+          <!-- aging potion -->
+          <div class="item-potion">
+            <a id="clickme" onclick="openLightbox()"><img src="img/aging-potion.png" alt="Aging Potion"></a>
+            <div class="desc-item">
+              <p><strong>Aging Potion -</strong></p>
+              <p>$29.99</p>
+            </div>
+          </div>
+
+          <!-- aging detail -->
+          <div id="lightbox">
+            <div id="lightbox_content">
+              <div id="close">&times;</div>
+              <img src="img/aging-potion.png" alt="Aging Potion">
+              <div class="potion-info">
+                <h2>Aging Potion</h2>
+                <h2>Use/Effect</h2>
+                <p>Causes the drinker to advance in age</p>
+                <h2>Ingredients:</h2>
+                <ul>
+                  <li>Red Wine</li>
+                  <li>Prune Juice</li>
+                  <li>Hairy Fungus</li>
+                  <li>Tortoise Shell</li>
+                  <li>Caterpillar</li>
+                  <li>Bat Tongue</li>
+                </ul>
+                <h2>Price:</h2>
+                <p>$29.99</p>
+                <button type="button" name="button">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- bulgeye potion -->
+          <div class="item-potion">
+            <img src="img/bulgeye-potion.png" alt="Bulgeye Potion">
+            <div class="desc-item">
+              <p><strong>Bulgeye Potion -</strong></p>
+              <p>$29.99</p>
+            </div>
+          </div>
+
+          <!-- dragon tonic -->
+          <div class="item-potion">
+            <img src="img/dragon-tonic.png" alt="Dragon Tonic">
+            <div class="desc-item">
+              <p><strong>Dragon Tonic -</strong></p>
+              <p>$29.99</p>
+            </div>
+          </div>
+
+          <!-- love potion -->
+          <div class="item-potion">
+            <img src="img/love-potion.png" alt="Love Potion">
+            <div class="desc-item">
+              <p><strong>Love Potion -</strong></p>
+              <p>$29.99</p>
+            </div>
+          </div>
+
+          <!-- polyjuice potion -->
+          <div class="item-potion">
+            <img src="img/polyjuice-potion.png" alt="Polyjuice Potion">
+            <div class="desc-item">
+              <p><strong>Polyjuice Potion -</strong></p>
+              <p>$29.99</p>
+            </div>
+          </div>
+
+          <!-- sleeping draught -->
+          <div class="item-potion">
+            <img src="img/sleeping-draught.png" alt="Sleeping Draught">
+            <div class="desc-item">
+              <p><strong>Sleeping Draught -</strong></p>
+              <p>$29.99</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <section>
+
+        <!-- form sign up newsletter -->
+        <form class="footer-form" action="index.html" method="post">
+          <div class="items-form">
+            <h4>Sign up for our Newsletter</h4>
+            <p>Sign up for our Newsletter & get exclusive discounts!</p>
+            <input type="email" name="" value="" placeholder="Enter your email">
+            <button type="button" name="button">SUBMIT</button>
+          </div>
+        </form>
+
+        <!-- principal information -->
+        <div class="info-logos">
+
+          <!-- infos -->
+          <div class="footer-infos">
+            <p>Company</p>
+            <p>Contact Us</p>
+            <p>Shipping</p>
+            <p>Returns</p>
+            <p>Careers</p>
+          </div>
+
+          <!-- social media -->
+          <div class="footer-logos">
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-twitter-square"></i>
+            <i class="fa fa-pinterest-square"></i>
+            <i class="fa fa-tumblr-square"></i>
+            <i class="fa fa-google-plus-square"></i>
+          </div>
+        </div>
+
+        <!-- footer rights -->
+        <p class="footer-rights">2015 Merlin's Potions. All Rights Reserved</p>
+      </section>
+    </footer>
+
+  </body>
+</html>

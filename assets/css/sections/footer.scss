@@ -1,0 +1,110 @@
+// footer section
+footer{
+  background: lightgray;
+  padding-top: 2em;
+
+  section{
+    width: 90%;
+    margin: auto;
+  }
+}
+
+// submit email form
+.footer-form{
+  width: 45%;
+  margin: auto;
+  border-radius: 8px;
+  background-color: #fff;
+  float: right;
+
+  //responsive form
+  @media #{$lg-mobile}{
+    float: none;
+    width: 100%;
+  }
+
+
+  // items in form
+  .items-form{
+    margin: auto;
+    padding: 1em;
+
+    h4{
+      font-style: italic;
+    }
+
+    p{
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+
+    input{
+      width: 60%;
+      padding: .4em;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    button{
+      width: 31%;
+      padding: .4em;
+    }
+  }
+}
+
+//infos footer
+.footer-infos{
+  width: 45%;
+  padding-top: .4em;
+  color: $hot-color;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: bold;
+  display: inline;
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  @media #{$lg-mobile}{
+    display: none;
+  }
+}
+
+//logos footer
+.footer-logos{
+  padding-top: .7em;
+  font-size: 30px;
+  color: #522f60;
+
+  :first-child{
+    margin-left: 0;
+  }
+
+  i{
+    margin-left: 32px;
+  }
+
+  @media #{$lg-mobile}{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size: 44px;
+    display: flex;
+    justify-content: space-around;
+
+    i{
+      margin: 0;
+    }
+  }
+}
+
+//rights reserved footer
+.footer-rights{
+  padding-top: 2em;
+  padding-bottom: 3em;
+  color: gray;
+
+  @media #{$lg-mobile}{
+    text-align: center;
+    padding-bottom: 2em;
+  }
+}
